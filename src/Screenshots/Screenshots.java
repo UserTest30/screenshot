@@ -17,6 +17,7 @@ public static void main(String[] args) throws IOException {
 	driver.manage().window().maximize();
 	TakesScreenshot scr=(TakesScreenshot)driver;
 	File s=scr.getScreenshotAs(OutputType.FILE);
+	System.out.println("greens");
 	File d=new File("C:\\Users\\shanmugaundaram\\Desktop\\selenium\\123.png");
 	FileUtils.copyFile(s,d);
 }
